@@ -1,0 +1,27 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="UNBEATABLESongImporter.App"
+             xmlns:local="using:UNBEATABLESongImporter"
+             xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+  
+    <Application.Styles>
+        <FluentTheme />
+        <materialIcons:MaterialIconStyles />
+    </Application.Styles>
+             
+     <Application.Resources>
+         <!-- colors taken from a screenshot of the arcade mode menu -->
+         <SolidColorBrush x:Key="BackgroundPrimary">#faf7d6</SolidColorBrush>
+         <SolidColorBrush x:Key="BackgroundSecondary">#e1debf</SolidColorBrush>
+         <SolidColorBrush x:Key="Primary">#ff4b7e</SolidColorBrush>
+         <SolidColorBrush x:Key="Secondary">#000000</SolidColorBrush>
+         <FontFamily x:Key="RobotoMono">avares://UNBEATABLESongImporter/Assets/RobotoMono-Regular.ttf#Roboto Mono</FontFamily>
+         <FontFamily x:Key="RobotoMonoItalic">avares://UNBEATABLESongImporter/Assets/RobotoMono-Italic.ttf#Roboto Mono</FontFamily>
+     </Application.Resources>
+</Application>
