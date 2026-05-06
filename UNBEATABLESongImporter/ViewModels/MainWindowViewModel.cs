@@ -221,7 +221,7 @@ public partial class MainWindowViewModel : ViewModelBase
         var outputFolderPath = Path.Combine(_customSongsDirectory.FullName, Path.GetFileNameWithoutExtension(path));
         Console.WriteLine($"Output folder: {outputFolderPath}");
         
-        if (Directory.Exists(outputFolderPath))
+        if (!Directory.Exists(outputFolderPath))
         {
             Directory.CreateDirectory(outputFolderPath);
         }
