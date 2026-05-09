@@ -117,7 +117,7 @@
                 VerticalAlignment="Stretch" IsEnabled="{Binding CanImportSongs}" Name="SongDropZone"
                 Command="{Binding ChooseSongsToImportCommand}">
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"
-                       Foreground="{DynamicResource Primary}" FontSize="50" Text="{Binding SongDropZoneText}" />
+                       Foreground="{DynamicResource Primary}" FontSize="40" Text="{Binding SongDropZoneText}" />
         </Button>
     </Grid>
 </Window>

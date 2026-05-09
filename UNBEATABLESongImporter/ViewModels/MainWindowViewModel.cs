@@ -236,6 +236,11 @@ public partial class MainWindowViewModel : ViewModelBase
         {
             Directory.CreateDirectory(outputFolderPath);
         }
+        else
+        {
+            SongDropZoneText = "could not import song:\noutput folder already exists";
+            return;
+        }
         
         foreach (var entry in files)
         {
@@ -243,6 +248,6 @@ public partial class MainWindowViewModel : ViewModelBase
             Console.WriteLine($"Extracting {entry.Name} to {destinationPath}");
             entry.ExtractToFile(destinationPath);
         }
-        SongDropZoneText = "song imported!";
+        SongDropZoneText = $"song imported with\n{difficulties.Count} difficulty(ies)";
     }
 }

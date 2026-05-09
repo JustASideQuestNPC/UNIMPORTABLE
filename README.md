@@ -1,15 +1,17 @@
-# song importer
+# UNIMPORTABLE
 
-A tiny app for importing custom songs into the rhythm game [UNBEATABLE](https://unbeatablegame.com).
-Currently Windows only.
+**the program where appData is illegal and you do imports.**
 
-![if you're reading this then i screwed up](./ui-image.png "Song Importer UI")
+UNIMPORTABLE is a tiny app for importing custom songs into the rhythm game
+[UNBEATABLE](https://unbeatablegame.com). Currently Windows only.
+
+![if you're reading this then i screwed up](./ui-image.png "UNIMPORTABLE UI")
 
 ## Installation
-- Download `UNBEATABLESongImporter.zip` from the
+- Download `UNIMPORTABLE.zip` from the
   [latest release](https://github.com/JustASideQuestNPC/UNBEATABLESongImporter/releases/latest).
 - Unzip it anywhere.
-- Run `UNBEATABLESongImporter.exe`.
+- Run `UNIMPORTABLE.exe`.
 
 ## Usage
 **Note:** It might take a long time to launch the first time. I have no idea why.
@@ -23,4 +25,4 @@ file picker, or just drag the file from File Explorer onto the drop zone.
 
 If UNBEATABLE is currently running, the song won't appear until you back all the way out to the
 story mode menu and reenter arcade mode. If you still don't see it, make sure you're looking for the
-right difficulty, and that you have `-customsongs` in your Steam launch options.
+right difficulty and that you have `-customsongs` in your Steam launch options.
