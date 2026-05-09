@@ -7,7 +7,7 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="UNBEATABLESongImporter.Views.MainWindow"
         Width="750" Height="450"
-        Title="UNBEATABLE Song Importer"
+        Title="UNIMPORTABLE"
         Background="{DynamicResource BackgroundPrimary}"
         x:DataType="viewModels:MainWindowViewModel"
         Focusable="True"
@@ -104,7 +104,7 @@
     
     <Grid RowDefinitions="Auto Auto 45 *" ColumnDefinitions="* 45">
         <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Margin="9 5 0 0" FontSize="30"
-                   Foreground="{DynamicResource Primary}">song importer</TextBlock>
+                   Foreground="{DynamicResource Primary}">unimportable</TextBlock>
         <TextBlock Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"  Margin="9 5 0 0" FontSize="15"
                    Foreground="{DynamicResource Secondary}">song directory</TextBlock>
         <TextBox Grid.Column="0" Grid.Row="2" FontSize="15" Margin="4"

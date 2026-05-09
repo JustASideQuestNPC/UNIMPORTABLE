@@ -23,6 +23,7 @@ public partial class MainWindowViewModel : ViewModelBase
     private DirectoryInfo? _customSongsDirectory;
 
     private static List<string> _allowedAudioTypes = ["mp3", "wav"];
+    private static List<string> _allowedImageTypes = ["png", "jpg", "jpeg"];
     private static List<string> _allowedDifficulties = [
         "Beginner",
         "Easy", // "normal" in-game
@@ -191,7 +192,17 @@ public partial class MainWindowViewModel : ViewModelBase
         {
             if (_allowedAudioTypes.Contains(Path.GetExtension(entry.Name)?.TrimStart('.').ToLowerInvariant()))
             {
+                if (hasAudio)
+                {
+                    SongDropZoneText = "could not import song:\nfound more than 1 audio file";
+                    return;
+                }
                 hasAudio = true;
+                files.Add(entry);
+            }
+            else if (_allowedImageTypes.Contains(Path.GetExtension(entry.Name)?.TrimStart('.').ToLowerInvariant()) &&
+                     Path.GetFileNameWithoutExtension(entry.Name) == "cover")
+            {
                 files.Add(entry);
             }
             else if (Path.GetExtension(entry.Name)?.TrimStart('.') == "txt")
