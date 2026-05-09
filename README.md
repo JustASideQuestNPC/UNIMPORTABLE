@@ -16,7 +16,7 @@ UNIMPORTABLE is a tiny app for importing custom songs into the rhythm game
 ## Usage
 **Note:** It might take a long time to launch the first time. I have no idea why.
 
-The first time you launch the song importer, it will try to detect the directory for custom songs.
+The first time you launch UNIMPORTABLE, it will try to detect the directory for custom songs.
 Unless you've done some really weird things with your file system, it will probably be right. If
 it's not, type a new path into the text box or click the folder icon to open a folder picker.
 
